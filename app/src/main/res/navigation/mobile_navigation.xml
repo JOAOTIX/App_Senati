@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_splash">
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.joaodev.appsenaticopy.ui.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_micuenta"
+            app:destination="@id/navigation_micuenta" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_horario"
+            app:destination="@id/navigation_horario" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_miscursos"
+            app:destination="@id/navigation_miscursos" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_birthday"
+            app:destination="@id/navigation_birthday" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_enlaces"
+            app:destination="@id/navigation_enlaces" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_cronograma"
+            app:destination="@id/navigation_cronograma" />
+        <action
+            android:id="@+id/action_navigation_home_to_fotocheck"
+            app:destination="@id/navigation_fotocheck" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_splash"
+        android:name="com.joaodev.appsenaticopy.ui.Splash"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_navigation_splash_to_navigation_login"
+            app:destination="@id/navigation_login" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_listadosedes"
+        android:name="com.joaodev.appsenaticopy.ui.Listadosedes"
+        android:label="fragment_listadosedes"
+        tools:layout="@layout/fragment_listadosedes" >
+        <action
+            android:id="@+id/action_navigation_listadosedes_to_navigation_mapa2"
+            app:destination="@id/navigation_mapa" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_mapa"
+        android:name="com.joaodev.appsenaticopy.ui.Mapa"
+        android:label="fragment_mapa"
+        tools:layout="@layout/fragment_mapa" />
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="com.joaodev.appsenaticopy.ui.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_navigation_login_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_navigation_login_to_navigation_listadosedes"
+            app:destination="@id/navigation_listadosedes" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_micuenta"
+        android:name="com.joaodev.appsenaticopy.ui.Micuenta"
+        android:label="fragment_micuenta"
+        tools:layout="@layout/fragment_micuenta" />
+    <fragment
+        android:id="@+id/navigation_horario"
+        android:name="com.joaodev.appsenaticopy.ui.Horario"
+        android:label="fragment_horario"
+        tools:layout="@layout/fragment_horario" />
+    <fragment
+        android:id="@+id/navigation_miscursos"
+        android:name="com.joaodev.appsenaticopy.ui.Miscursos"
+        android:label="fragment_miscursos"
+        tools:layout="@layout/fragment_miscursos" />
+    <fragment
+        android:id="@+id/navigation_birthday"
+        android:name="com.joaodev.appsenaticopy.ui.Birthday"
+        android:label="fragment_birthday"
+        tools:layout="@layout/fragment_birthday" />
+    <fragment
+        android:id="@+id/navigation_enlaces"
+        android:name="com.joaodev.appsenaticopy.ui.Enlaces"
+        android:label="fragment_enlaces"
+        tools:layout="@layout/fragment_enlaces" />
+    <fragment
+        android:id="@+id/navigation_cronograma"
+        android:name="com.joaodev.appsenaticopy.ui.Cronograma"
+        android:label="fragment_cronograma"
+        tools:layout="@layout/fragment_cronograma" />
+    <fragment
+        android:id="@+id/navigation_fotocheck"
+        android:name="com.joaodev.appsenaticopy.ui.Fotocheck"
+        android:label="fragment_fotocheck"
+        tools:layout="@layout/fragment_fotocheck" />
+</navigation>
