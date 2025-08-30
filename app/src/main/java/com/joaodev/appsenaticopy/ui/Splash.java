@@ -40,5 +40,11 @@ public class Splash extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         context = getContext();
         navController = Navigation.findNavController(view);
+        new android.os.Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                navController.navigate(R.id.navigation_home);
+            }
+        }, 3000); // 3000ms = 3 segundos
     }
 }

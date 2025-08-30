@@ -1,6 +1,26 @@
 <resources>
     <string name="app_name">appSenatiCopy</string>
     <string name="tab_home">Home</string>
+    <string name="tab_listsedes">Listado de sedes</string>
+    <string name="tab_curso">CURSO</string>
+    <string name="tab_miscursos">Mis Cursos</string>
+    <string name="tab_clases">ClassTimes</string>
+    <string name="tab_cuenta">Mi cuenta</string>
+    <string name="tab_datos_personales">Datos Personales</string>
+    <string name="tab_datos_carrera">Datos de Carrera</string>
+    <string name="tab_version">Versión Actual</string>
+    <string name="tab_terminos_uso">Terminos de uso</string>
+    <string name="tab_cumple">Cumpleaños</string>
+    <string name="tab_enlances">Enlaces</string>
+    <string name="tab_cronograma">Cronograma</string>
+    <string name="tab_listbancos">Listado de bancos</string>
+    <string name="tab_otros_periodos">Otros periodos</string>
+    <string name="tab_fotocheck">Fotocheck</string>
+    <string name="tab_sinfo">Sinfo</string>
+    <string name="tab_horario">Horario</string>
+    <string name="tab_identificacion">Mi identificación</string>
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
