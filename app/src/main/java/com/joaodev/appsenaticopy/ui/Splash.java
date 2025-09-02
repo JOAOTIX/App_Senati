@@ -43,8 +43,14 @@ public class Splash extends Fragment {
         new android.os.Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                navController.navigate(R.id.navigation_home);
+                navController.navigate(
+                        R.id.navigation_login,
+                        null,
+                        new androidx.navigation.NavOptions.Builder()
+                                .setPopUpTo(R.id.navigation_splash, true)
+                                .build()
+                );
             }
-        }, 3000); // 3000ms = 3 segundos
+        }, 2400);
     }
 }

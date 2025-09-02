@@ -5,12 +5,26 @@
     android:layout_height="match_parent"
     android:background="@color/bay_of_many"
     tools:context=".ui.Splash">
-
-    <ImageView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center_vertical"
-        android:src="@drawable/ic_logo_senati"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_logo_senati"
+            android:contentDescription="@string/logo_de_senati"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="36dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/white"
         />
 
 </FrameLayout>
