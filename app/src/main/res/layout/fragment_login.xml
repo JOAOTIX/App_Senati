@@ -3,41 +3,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white_home"
     android:orientation="vertical"
     tools:context=".ui.Login">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingVertical="16dp"
+        android:paddingVertical="24dp"
         android:background="@color/bay_of_many">
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:src="@drawable/ic_logo_senati"
-            android:contentDescription="@string/logo_de_senati"/>
+            android:contentDescription="@string/logo_de_senati"
+            android:layout_marginTop="20dp"/>
+
     </FrameLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="36dp"
         android:orientation="vertical">
+
         <EditText
             android:id="@+id/edtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:padding="12dp"
-            android:hint="Email" />
+            android:textColor="@color/black"
+            android:background="@drawable/edittext_border"
+            android:drawableStart="@drawable/ic_user_input"
+            android:drawablePadding="8dp"
+            android:paddingStart="16dp"/>
 
         <EditText
             android:id="@+id/edtPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:padding="12dp"
-            android:hint="Password" />
+            android:textColor="@color/black"
+            android:background="@drawable/edittext_border"
+            android:drawableStart="@drawable/ic_candado_input"
+            android:drawablePadding="8dp"
+            android:drawableEnd="@drawable/ic_eye_input"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"/>
+
+        <Button
+            android:id="@+id/btnEntrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="entrar"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-medium"
+            android:background="@drawable/btn_bay_of_many_selector"/>
+
+        <Button
+            android:id="@+id/btnVersedes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="ver sedes"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-medium"
+            android:background="@drawable/btn_bay_of_many_selector"/>
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="270dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="v1.15.2"
+            android:layout_marginStart="8sp"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
 </LinearLayout>

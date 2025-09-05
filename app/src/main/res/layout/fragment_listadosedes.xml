@@ -1,14 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ui.Listadosedes">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <!-- Header -->
+    <FrameLayout
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/bay_of_many"
+        android:paddingVertical="14dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Listado de sedes"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_flecha_icon"/>
+    </FrameLayout>
+
+    <!-- Buscador -->
+    <EditText
+        android:id="@+id/etBuscar"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="Encuentra tu sede"
+        android:drawableStart="@drawable/ic_lupa"
+        android:drawablePadding="20dp"
+        android:paddingStart="10dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <!-- Contenedor de la sede -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerSede"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/etBuscar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp">
+
+        <!-- Nombre de la sede -->
+        <TextView
+            android:id="@+id/tvSede"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Sede Cercado de Lima"
+            android:textColor="@color/bay_of_many"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Dirección -->
+        <TextView
+            android:id="@+id/tvDireccion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Av. 28 de Julio 715 - Lima - Lima"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/tvSede"
+            app:layout_constraintStart_toStartOf="@id/tvSede"
+            app:layout_constraintEnd_toEndOf="@id/tvSede"/>
+
+        <!-- Ver en mapa -->
+
+        <!-- Flecha -->
+
+        <TextView
+            android:id="@+id/tvMapa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:text="Ver en Mapa"
+            android:textColor="@color/bay_of_many"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@id/tvArrow"
+            app:layout_constraintTop_toTopOf="@id/tvSede" />
+
+        <TextView
+            android:id="@+id/tvArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=">"
+            android:textSize="20sp"
+            android:textColor="@color/bay_of_many"
+            app:layout_constraintBaseline_toBaselineOf="@id/tvMapa"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="6dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
