@@ -5,6 +5,11 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+<<<<<<< HEAD
+=======
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+>>>>>>> c1c659f (añadiendo las vistas trabajadas)
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -12,6 +17,10 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+<<<<<<< HEAD
+=======
+import android.widget.LinearLayout;
+>>>>>>> c1c659f (añadiendo las vistas trabajadas)
 
 import com.joaodev.appsenaticopy.R;
 import com.joaodev.appsenaticopy.databinding.FragmentMiscursosBinding;
@@ -39,5 +48,39 @@ public class Miscursos extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         context = getContext();
         navController = Navigation.findNavController(view);
+<<<<<<< HEAD
+=======
+        binding.btnArrow.setOnClickListener(v -> navController.popBackStack());
+        ViewCompat.setOnApplyWindowInsetsListener(binding.header, (v, insets) -> {
+            int statusBarHeight = insets.getInsets(WindowInsetsCompat.Type.statusBars()).top;
+
+            v.setPadding(
+                    v.getPaddingLeft(),
+                    statusBarHeight + v.getPaddingTop(),
+                    v.getPaddingRight(),
+                    v.getPaddingBottom()
+            );
+
+            return insets;
+        });
+        View underlineEnProgreso = view.findViewById(R.id.underlineEnProgreso);
+        View underlineHistorico = view.findViewById(R.id.underlineHistorico);
+
+        LinearLayout btnEnProgreso = view.findViewById(R.id.btnEnProgreso);
+        LinearLayout btnHistorico = view.findViewById(R.id.btnHistorico);
+
+        btnEnProgreso.setOnClickListener(v -> {
+            underlineEnProgreso.setVisibility(View.VISIBLE);
+            underlineHistorico.setVisibility(View.GONE);
+
+        });
+
+        btnHistorico.setOnClickListener(v -> {
+            underlineEnProgreso.setVisibility(View.GONE);
+            underlineHistorico.setVisibility(View.VISIBLE);
+
+        });
+
+>>>>>>> c1c659f (añadiendo las vistas trabajadas)
     }
 }

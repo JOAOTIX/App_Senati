@@ -10,8 +10,21 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="fun_blue">#1C57A2</color>
+<<<<<<< HEAD
+=======
+    <color name="linear_blue">#1600A0</color>
+>>>>>>> c1c659f (añadiendo las vistas trabajadas)
     <color name="bay_of_many">#264186</color>
     <color name="picton_blue">#469CE8</color>
     <color name="white_home">#fefeff</color>
     <color name="btn_hover">#AFAFAF</color>
+<<<<<<< HEAD
+=======
+    <color name="red">#FF0000</color>
+    <color name="cum">#0c5be2</color>
+    <color name="estado">#F0B50A</color>
+    <color name="green">#1cff91</color>
+    <color name="grey_100">#CCCCCC</color>
+    <color name="recordatorio">#92FFEB3B</color>
+>>>>>>> c1c659f (añadiendo las vistas trabajadas)
 </resources>

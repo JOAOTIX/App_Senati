@@ -8,6 +8,10 @@
     tools:context=".ui.Login">
 
     <FrameLayout
+<<<<<<< HEAD
+=======
+        android:id="@+id/header"
+>>>>>>> c1c659f (añadiendo las vistas trabajadas)
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingVertical="24dp"

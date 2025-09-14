@@ -1,10 +1,20 @@
 package com.joaodev.appsenaticopy.ui;
 
 import android.content.Context;
+<<<<<<< HEAD
+=======
+import android.content.Intent;
+import android.net.Uri;
+>>>>>>> c1c659f (añadiendo las vistas trabajadas)
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+<<<<<<< HEAD
+=======
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+>>>>>>> c1c659f (añadiendo las vistas trabajadas)
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -41,5 +51,37 @@ public class Enlaces extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         context = getContext();
         navController = Navigation.findNavController(view);
+<<<<<<< HEAD
+=======
+        ViewCompat.setOnApplyWindowInsetsListener(binding.header, (v, insets) -> {
+            int statusBarHeight = insets.getInsets(WindowInsetsCompat.Type.statusBars()).top;
+
+            v.setPadding(
+                    v.getPaddingLeft(),
+                    statusBarHeight + v.getPaddingTop(),
+                    v.getPaddingRight(),
+                    v.getPaddingBottom()
+            );
+
+            return insets;
+        });
+        binding.btnArrow.setOnClickListener(v -> navController.popBackStack());
+
+        binding.btnWeb.setOnClickListener(v -> {
+            String url = "https://www.senati.edu.pe/";
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+            startActivity(intent);
+        });
+        binding.btnAula.setOnClickListener(v -> {
+            String url = "https://aulavirtual.senati.edu.pe/";
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+            startActivity(intent);
+        });
+        binding.btnBiblioteca.setOnClickListener(v -> {
+            String url = "https://senatipe.sharepoint.com/sites/innovacion/bv/SitePages/Home.aspx";
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+            startActivity(intent);
+        });
+>>>>>>> c1c659f (añadiendo las vistas trabajadas)
     }
 }
