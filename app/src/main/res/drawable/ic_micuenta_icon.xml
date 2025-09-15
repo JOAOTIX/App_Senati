@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="32dp" android:viewportHeight="83" android:viewportWidth="83" android:width="32dp">
-=======
 <vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="60dp" android:viewportHeight="83" android:viewportWidth="83" android:width="60dp">
->>>>>>> c1c659f (añadiendo las vistas trabajadas)
-      
+
     <path android:fillColor="#1763d3" android:pathData="M6.4,12.5l-2.5,2.5 0.3,30.1 0.3,30.1 2.4,1.9c2.2,1.8 4.3,1.9 31.8,1.9l29.4,-0 2.4,-2.5 2.5,-2.4 0,-29.6 0,-29.6 -2.5,-2.4 -2.4,-2.5 -29.6,-0 -29.6,-0 -2.5,2.5zM45.5,23.2c11.4,8.9 1.1,26.4 -11.9,20.3 -6.1,-2.9 -8.4,-10.2 -5.1,-16.5 3.1,-5.9 11.8,-7.9 17,-3.8zM45.2,52.4c11.5,2.5 16.8,6.3 16.8,12.1l0,3.5 -23.2,-0.2 -23.3,-0.3 -0.3,-2.6c-0.4,-3 2.8,-7.3 7,-9.5 2.3,-1.2 11.9,-3.8 15.8,-4.3 0.3,-0 3.5,0.6 7.2,1.3z" android:strokeColor="#00000000"/>
     
 </vector>

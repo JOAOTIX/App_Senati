@@ -25,4 +25,5 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="frase_splash">Descargando informacion...</string>
     <string name="logo_de_senati">Logo de senati</string>
+    <string name="a"><![CDATA[<]]></string>
 </resources>

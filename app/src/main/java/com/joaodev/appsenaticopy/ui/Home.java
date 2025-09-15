@@ -1,20 +1,13 @@
 package com.joaodev.appsenaticopy.ui;
 
 import android.content.Context;
-<<<<<<< HEAD
-=======
 import android.content.Intent;
 import android.net.Uri;
->>>>>>> c1c659f (añadiendo las vistas trabajadas)
 import android.os.Bundle;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-<<<<<<< HEAD
-=======
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
->>>>>>> c1c659f (añadiendo las vistas trabajadas)
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -50,8 +43,6 @@ public class Home extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         context = getContext();
         navController = Navigation.findNavController(view);
-<<<<<<< HEAD
-=======
         ViewCompat.setOnApplyWindowInsetsListener(binding.header, (v, insets) -> {
             int statusBarHeight = insets.getInsets(WindowInsetsCompat.Type.statusBars()).top;
 
@@ -76,6 +67,5 @@ public class Home extends Fragment {
         binding.btnMicuenta.setOnClickListener(v -> navController.navigate(R.id.navigation_micuenta));
         binding.btnCumple.setOnClickListener(v -> navController.navigate(R.id.navigation_birthday));
         binding.btnEnlaces.setOnClickListener(v -> navController.navigate(R.id.navigation_enlaces));
->>>>>>> c1c659f (añadiendo las vistas trabajadas)
     }
 }
